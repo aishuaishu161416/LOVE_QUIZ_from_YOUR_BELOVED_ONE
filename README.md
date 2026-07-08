@@ -3,38 +3,15 @@
 <head>
   <title>Love Unlock Quiz</title>
   <style>
-    body {
-      background-color: #111;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      overflow: hidden;
-    }
-    .question {
-      display: none;
-      margin-top: 50px;
-    }
-    button {
-      margin: 10px;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-      background: #222;
-      color: #fff;
-      border: 2px solid pink;
-      border-radius: 8px;
+    body { background-color: #111; color: #fff; font-family: Arial, sans-serif; text-align: center; overflow: hidden; }
+    .question { display: none; margin-top: 50px; }
+    button { 
+      margin: 10px; padding: 10px 20px; font-size: 16px; cursor: pointer; 
+      background: #222; color: #fff; border: 2px solid pink; border-radius: 8px;
       transition: all 0.3s ease;
     }
-    button:hover {
-      background: pink;
-      color: #111;
-      box-shadow: 0 0 15px pink;
-    }
-    .success {
-      color: pink;
-      font-size: 22px;
-      margin-top: 30px;
-    }
+    button:hover { background: pink; color: #111; box-shadow: 0 0 15px pink; }
+    .success { color: pink; font-size: 22px; margin-top: 30px; }
 
     /* Glowing heart animation */
     .heart {
@@ -59,17 +36,6 @@
     @keyframes floatUp {
       0% { transform: translateY(0) rotate(0deg); opacity: 1; }
       100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
-    }
-
-    /* Final poem box */
-    pre {
-      background-color: #000;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 20px #ff4d4d;
-      font-family: "Courier New", monospace;
-      text-align: left;
-      display: inline-block;
     }
   </style>
 </head>
@@ -100,8 +66,8 @@
     <p>What is my dream with you?</p>
     <button onclick="wrongAnswer()">Best future drama with you</button>
     <button onclick="wrongAnswer()">Having a kid with you</button>
-    <button onclick="wrongAnswer()">Only giving torcher to you</button>
-    <button onclick="checkAnswer(3)">Having lifetime healthy relationship with you</button>
+    <button onclick="wrongAnswer()">Only Giving torcher to you</button>
+    <button onclick="checkAnswer(3)">Having LifeTime Healthy Relationship with you</button>
   </div>
 
   <!-- Question 4 -->
@@ -134,10 +100,10 @@
   <!-- Question 7 -->
   <div id="q7" class="question">
     <p>If my beauty fades, will you still love me?</p>
-    <button onclick="wrongAnswer()">You want beauty every time</button>
-    <button onclick="wrongAnswer()">Are you ready to leave me</button>
-    <button onclick="checkAnswer(7)">Ready to accept however I am</button>
-    <button onclick="wrongAnswer()">Want me to change for yourself</button>
+    <button onclick="wrongAnswer()">you want beauty every time</button>
+    <button onclick="wrongAnswer()">are you ready to leave me</button>
+    <button onclick="checkAnswer(7)">Ready to accept however i am</button>
+    <button onclick="wrongAnswer()">want me to change for yourself</button>
   </div>
 
   <!-- Question 8 -->
@@ -146,12 +112,12 @@
     <button onclick="wrongAnswer()">Bent for me</button>
     <button onclick="wrongAnswer()">Get angry too</button>
     <button onclick="wrongAnswer()">Don't try to fix it</button>
-    <button onclick="checkAnswer(8)">Try to convince and spend more time with me</button>
+    <button onclick="checkAnswer(8)">Try to Convince and spend more time with me</button>
   </div>
 
   <!-- Question 9 -->
   <div id="q9" class="question">
-    <p>If you are in trouble, what kind of support do you want from me?</p>
+    <p>If you are in trouble, what kind of support does you want from me?</p>
     <button onclick="wrongAnswer()">Physically</button>
     <button onclick="wrongAnswer()">Emotionally</button>
     <button onclick="wrongAnswer()">Financially</button>
@@ -160,25 +126,27 @@
 
   <!-- Question 10 -->
   <div id="q10" class="question">
-    <p>What do you like to call me always?</p>
+    <p>What you like to call me always?</p>
     <button onclick="wrongAnswer()">Kanda</button>
     <button onclick="wrongAnswer()">Baby</button>
     <button onclick="checkAnswer(10)">Hendthi</button>
     <button onclick="wrongAnswer()">Chinna</button>
   </div>
-
-  <!-- Question 11 -->
+  
+<!-- Question 11 -->
   <div id="q11" class="question">
     <p>If I'm in labour pain and doctor says only one can be saved, who would you choose?</p>
-    <button onclick="checkAnswer(11)">Me (your partner)</button>
+    <button onclick="checkAnswer(11)">Me(my partner)</button>
     <button onclick="wrongAnswer()">Baby</button>
     <button onclick="wrongAnswer()">Don't have answer for this</button>
-    <button onclick="wrongAnswer()">Simply say I don't want them</button>
+    <button onclick="wrongAnswer()">Simply say I Don't want them </button>
   </div>
 
+  
+
   <!-- Final Screen -->
-  <div id="final" class="question">
-    <pre>
+<div id="final" class="question">
+  <pre style="color:#fff; text-align:left; display:inline-block; font-family: 'Courier New', monospace;">
 You are my <b>primary key</b>.
 Every plan <b>references</b> you.
 Every future <b>joins</b> on you.
@@ -193,20 +161,20 @@ SELECT * FROM forever;
 INSERT INTO love VALUES ("eternally","endlessly");
 
 <b style="color:#ff4d4d;">ERROR:</b> Foreign key constraint failed. ❤️
-    </pre>
-    <p style="color:pink; font-size:20px; margin-top:20px;">💞 From your lovely Hendthi 💞</p>
-  </div>
+  </pre>
+  <p style="color:pink; font-size:20px; margin-top:20px;">💞 From your lovely Hendthi 💞</p>
+</div>
 
+  <!-- Floating hearts -->
   <script>
     function checkAnswer(q) {
-      document.getElementById("q" + q).style.display = "none";
-      if (q < 11) {
-        document.getElementById("q" + (q + 1)).style.display = "block";
+      document.getElementById("q"+q).style.display = "none";
+      if(q < 10) {
+        document.getElementById("q"+(q+1)).style.display = "block";
       } else {
         document.getElementById("final").style.display = "block";
       }
     }
-
     function wrongAnswer() {
       alert("😢 You don't understand your partner correctly...");
     }
@@ -217,4 +185,11 @@ INSERT INTO love VALUES ("eternally","endlessly");
       heart.className = "floating-heart";
       heart.innerHTML = "💖";
       heart.style.left = Math.random() * 100 + "vw";
-      heart.style.animationDuration = (5 + Math.random() * 5) + "
+      heart.style.animationDuration = (5 + Math.random() * 5) + "s";
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 8000);
+    }
+    setInterval(createHeart, 1000);
+  </script>
+</body>
+</html>
