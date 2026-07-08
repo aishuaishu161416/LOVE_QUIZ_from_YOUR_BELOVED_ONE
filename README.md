@@ -146,16 +146,16 @@
 
   <!-- Final Screen -->
 <div id="final" class="question">
-  <pre style="color:#fff; text-align:left; display:inline-block; font-family: 'Courier New', monospace;">
-You are my <b>primary key</b>.
-Every plan <b>references</b> you.
-Every future <b>joins</b> on you.
-Every query <b>expects</b> you.
+  <pre style="background-color:#111; color:#ffb6c1; text-align:left; display:inline-block; font-family:'Courier New', monospace; padding:20px; border-radius:10px; box-shadow:0 0 20px #ff4d4d;">
+You are my <b style="color:#ff69b4;">primary key</b>.
+Every plan <b style="color:#ff69b4;">references</b> you.
+Every future <b style="color:#ff69b4;">joins</b> on you.
+Every query <b style="color:#ff69b4;">expects</b> you.
 
 Our tables will always exist,
-every <b>record</b> will be complete.
+every <b style="color:#ff69b4;">record</b> will be complete.
 Because without you, our
-<b>relationships</b> just won't work.
+<b style="color:#ff69b4;">relationships</b> just won't work.
 
 SELECT * FROM forever;
 INSERT INTO love VALUES ("eternally","endlessly");
