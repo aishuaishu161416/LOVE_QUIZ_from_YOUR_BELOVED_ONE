@@ -142,7 +142,12 @@
     <button onclick="wrongAnswer()">Simply say I Don't want them </button>
   </div>
 
-  
+  <!-- Blank Screen -->
+<div id="blank" class="question">
+  <div style="background-color:#000; color:#ffb6c1; width:80%; height:300px; margin:auto; border-radius:10px; display:flex; align-items:center; justify-content:center; box-shadow:0 0 20px #ff4d4d;">
+    <p style="font-size:22px;">💞 Double tap to open the next page 💞</p>
+  </div>
+</div>
 
   <!-- Final Screen -->
 <div id="final" class="question">
